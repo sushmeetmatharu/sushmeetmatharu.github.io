@@ -7,6 +7,27 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <style>
+    .panel {
+      min-height: 100vh;
+      width: 100%;
+      padding: 4rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .panel .content, 
+    .panel .intro, 
+    .panel .inner {
+      max-width: 1200px;
+      width: 100%;
+    }
+    .image.placeholder {
+      width: 100%;
+      min-height: 20rem;
+      background: transparent;
+    }
+
     .image.placeholder {
       width: 100%;
       min-height: 20rem;
@@ -31,7 +52,7 @@
       </section>
 
       <!-- Panel (About) -->
-      <section class="panel spotlight medium right" id="first">
+      <section class="panel spotlight medium right" id="first" style="display:block;">
         <div class="content span-7">
           <h2 class="major">About Me</h2>
           <p>I’m Sushmeet Kaur Matharu, a master’s student specializing in Artificial Intelligence with a background in Data Science and Business Intelligence. My academic foundation spans machine learning, computer vision, natural language processing, and data engineering.</p>
@@ -42,7 +63,7 @@
       </section>
 
       <!-- Panel (Skills) -->
-      <section class="panel color1">
+      <section class="panel color1" style="display:block;">
         <div class="intro joined">
           <h2 class="major">Skills</h2>
           <p>Here are the tools and technologies I've worked with across data science, analytics, and artificial intelligence:</p>
@@ -60,7 +81,7 @@
       </section>
 
       <!-- Placeholder Panels (No image but width preserved) -->
-      <section class="panel spotlight large left">
+      <section class="panel spotlight large left" style="display:block;">
         <div class="content span-5">
           <h2 class="major">Magna amet tempus</h2>
           <p>Mauris a cursus velit. Nunc lacinia sollicitudin egestas bibendum, magna dui bibendum ex...</p>
@@ -68,7 +89,7 @@
         <div class="image placeholder"></div>
       </section>
 
-      <section class="panel">
+      <section class="panel" style="display:block;">
         <div class="intro color2">
           <h2 class="major">Elit integer</h2>
           <p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar...</p>
@@ -81,7 +102,7 @@
       </section>
 
       <!-- Contact Panel (untouched for now) -->
-      <section class="panel color4-alt">
+      <section class="panel color4-alt" style="display:block;">
         <div class="intro color4">
           <h2 class="major">Contact</h2>
           <p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar...</p>
